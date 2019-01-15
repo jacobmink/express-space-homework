@@ -3,7 +3,7 @@
 <head>
     <title>Show</title>
 </head>
-<body>
+<body style="background: rgb(<%= Math.floor(Math.random()*255) %>, <%= Math.floor(Math.random()*255) %>, <%= Math.floor(Math.random()*255) %>); border: 10px solid grey; text-align: center;">
     <h1>Show me what you got</h1>
     <%= thisMission.name %>
     <br>
@@ -13,7 +13,9 @@
     <br>
     <%= thisMission.missionType %>
     <br>
-    <%= thisMission.img %>
+    <img src= "<%= thisMission.img %>" alt="Image is not linked correctly">
+    
+    <br>
 
     <a href="http://localhost:3000/missions">Back to missions</a>
 
