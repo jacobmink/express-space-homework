@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Index</title>
+</head>
+<body>
+    <h1>Missions</h1>
+    <ul class='missions'>
+        <% for(let i = 0; i < missions.length; i++){ %>
+            <li>
+                    <a href="http://localhost:3000/missions/<%= i %>"><%= missions[i].name %></a>
+            </li>
+        <% } %>
+
+
+    </ul>
+    
+
+        
+    
+
+
+</body>
+</html>
